@@ -36,7 +36,6 @@ main{
     font-family: var(--fonte-montserrat);
     font-size: 1.4rem;
     max-width: 37.5rem;
-    height: 90vh;
     margin: 1rem;
     border-radius: 10px;
 }
