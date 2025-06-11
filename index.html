@@ -5,11 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="estilo/style.css">
+  <link rel="stylesheet" href="estilo/media-query.css">
   <title>Frontend Mentor | Product preview card component</title>
 </head>
 <body>
   <main>
-    <img src="images/image-product-mobile.jpg" alt="Perfume">
+    <picture>
+      <source media="(min-width: 1440px)" srcset="images/image-product-desktop.jpg">
+      <img src="images/image-product-mobile.jpg" alt="Perfume">
+    </picture>
     <section>
       <h2>Perfume</h2>
       <h1>Gabrielle Essence Eau De Parfum</h1>
@@ -20,7 +24,9 @@
           <div class="valor-atual">$149.99</div>
           <div class="valor-antigo">$169.99</div>
         </div>
-        <div class="botão"><img src="images/icon-cart.svg" alt="ícone carrinho de compras"> Add to Cart</div>
+        <a href="#">
+          <div class="botão"><img src="images/icon-cart.svg" alt="ícone carrinho de compras"> Add to Cart</div>
+        </a>
     </section>
   </main>
   <footer>
